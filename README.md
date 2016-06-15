@@ -1,3 +1,5 @@
+#SpinCommerce Liquid Documentation
+
 - [Tags](#tags)
  - [Paginate](#paginate)
 - [Global variables](#global-variables)
