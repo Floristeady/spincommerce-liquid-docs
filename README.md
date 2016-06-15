@@ -45,9 +45,6 @@ The Cart Object represents the current cart.
 
 It is available as the variable `cart` in the *cart.liquid* template.
 
-An example can be found at <https://github.com/Corpspin/spincommerce-store/blob/master/themes/basic/cart.liquid>.
-
-
 |Attribute|Type|Description
 |---|---|---|
 |update_url|String|The URL where the cart form should POST to.|
@@ -62,8 +59,6 @@ An example can be found at <https://github.com/Corpspin/spincommerce-store/blob/
 The Product Object represents a visible product in the current shop.
 
 It is available as the variable `product` in the `product.liquid` template and as the global variable `products`(collection) in all the templates.
-
-An example can be found at <https://github.com/Corpspin/spincommerce-store/blob/master/themes/basic/products.liquid>.
 
 |Attribute|Type|Description
 |---|---|---|
