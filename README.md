@@ -3,7 +3,7 @@
 - [Global variables](#global-variables)
 - [Objects](#objects)
  - [Product](#product)
-- [Iterating through categories and subcategories](#)
+- [Iterating through categories and subcategories](##iterating-through-categories-and-subcategories)
 
 
 ## Tags 
