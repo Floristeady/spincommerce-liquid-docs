@@ -4,6 +4,7 @@
  - [Paginate](#paginate)
 - [Global variables](#global-variables)
 - [Objects](#objects)
+ - [Cart](#cart)
  - [Product](#product)
 - [Iterating through categories and subcategories](#iterating-through-categories-and-subcategories)
 
