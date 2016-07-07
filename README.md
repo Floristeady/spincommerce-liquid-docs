@@ -79,6 +79,16 @@ It is available as the variable `product` in the `product.liquid` template and a
 |images|Product Image Object Collection|Collection of product images.|
 |first_image|Product Image Object|First product image.|
 
+## Iterating through specific categories products 
+
+List products with 'food' category 
+
+```liquid
+{% for product in categories.food.products %}
+  {{ product.name }} - {{ product.formatted_price }}
+{% endfor %}
+```
+
 ## Iterating through categories and subcategories
 
 ```liquid
@@ -98,7 +108,9 @@ It is available as the variable `product` in the `product.liquid` template and a
 </ul>
 ```
 
-## Iterating through categories and subcategories using navigation menu 'categorias'
+## Iterating through categories and subcategories using Menus
+
+List categories from a menu with slug 'categorias'. If the MenuItem links a category (link.is_category? returns true) and the category (link.category) has subcategories, show its links.
 
 ```liquid
 <ul>
