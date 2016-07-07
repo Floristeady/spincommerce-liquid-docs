@@ -82,8 +82,8 @@ It is available as the variable `product` in the `product.liquid` template and a
 ## Iterating through categories and subcategories
 
 ```liquid
-{% for category in categories %}
-  <ul class="categories">
+<ul class="categories">
+  {% for category in categories %}
     <li>
       <a href="{{category.url}}">{{category.name}}</a>
       {% if category.has_subcategories %}
@@ -94,6 +94,27 @@ It is available as the variable `product` in the `product.liquid` template and a
         </ul>
       {% endif %}
     </li>
-  </ul>
-{% endfor %}
+  {% endfor %}
+</ul>
+```
+
+## Iterating through categories and subcategories using navigation menu 'categorias'
+
+```liquid
+<ul>
+  {% for link in menus.categorias.links %}
+    <li class="menuitem">
+      <a href="{{link.url}}" {% if link.target %} target="blank"{% endif %}>{{link.name}}</a>
+      {% if link.is_category? %}
+          {% if link.category.has_subcategories %}
+            <ul class="submenu">
+            {% for subcategory in link.category.subcategories %}
+              <li><a href="{{subcategory.url}}">{{subcategory.name}}</a></li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
 ```
